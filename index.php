@@ -7,6 +7,7 @@
     <title>Index</title>
 </head>
 <body>
-    
+    <h1>Hello World!</h1>
+    <p>lorem ipsum</p>
 </body>
 </html>
