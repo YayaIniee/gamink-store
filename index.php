@@ -26,7 +26,7 @@
           <!-- The slideshow/carousel -->
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="img/foto!.jpg" alt="" class="d-block" style="width:100%">
+              <img src="img/foto1.jpg" alt="" class="d-block" style="width:100%">
             </div>
             <div class="carousel-item">
               <img src="img/foto2.jpg" alt="" class="d-block" style="width:100%">
