@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header> <?php include 'header.php' ?> </header>
     <h1>Hello World!</h1>
     <p>lorem ipsum</p>
 </body>
