@@ -13,7 +13,7 @@
 <body>
 <nav class="navbar navbar-expand-sm bg-black navbar-dark sticky-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">
+    <a class="navbar-brand" href="index.php">
       <img src="" alt="Logo" style="width:150px;">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
