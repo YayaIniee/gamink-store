@@ -30,9 +30,9 @@
          <div class="span8">
            <div id="menu_user" class="account pull-rigth">
              <ul class="user-menu">
-               <li><a href="index.php">Home</a></li>
-               <li><a href="index.php?p=about">About Us</a></li>
-               <li><a href="index.php?p=contact"></a></li>
+               <li><a href="index.php" class="text-warning">Home</a></li>
+               <li><a href="index.php?p=about" class="text-warning">About Us</a></li>
+               <li><a href="index.php?p=contact" class="text-warning">Contact</a></li>
 
               <?php
                 if(isset($_SESSION["role"]))
@@ -40,31 +40,31 @@
                   if($_SESSION["role"] == "admin")
                   {
               ?>
-               <li><a href="index.php?p=accountlist">User</a></li>
-               <li><a href="index.php?p=rolelist">Role</a></li>
-               <li><a href="index.php?p=pembelilist">Pembeli</a></li>
-               <li><a href="index.php?p=categorylist">Category</a></li>
-               <li><a href="index.php?p=menulist">Menu</a></li>
-               <li><a href="index.php?p=bannerlist">Banner</a></li>
-               <li><a href="index.php?p=pesananlist">Pesanan</a></li>
+               <li><a href="index.php?p=accountlist" class="text-warning">User</a></li>
+               <li><a href="index.php?p=rolelist" class="text-warning">Role</a></li>
+               <li><a href="index.php?p=pembelilist" class="text-warning">Pembeli</a></li>
+               <li><a href="index.php?p=categorylist" class="text-warning">Category</a></li>
+               <li><a href="index.php?p=menulist" class="text-warning">Menu</a></li>
+               <li><a href="index.php?p=bannerlist" class="text-warning">Banner</a></li>
+               <li><a href="index.php?p=pesananlist" class="text-warning">Pesanan</a></li>
                <?php
                   } 
                     else //member
                   {
                 ?>
-                <li><a href="index.php?p=historypesanan"></a>History Pesanan</li>
-                <li><a href="index.php?p=cart"></a>Keranjang</li>
+                <li><a href="index.php?p=historypesanan" class="text-warning"></a>History Pesanan</li>
+                <li><a href="index.php?p=cart" class="text-warning"></a>Keranjang</li>
                 <?php
                   }
                 ?>
-                <li><a href="index.php?p=logout">Logout</a></li>
+                <li><a href="index.php?p=logout" class="text-warning">Logout</a></li>
                 <?php
                 }
                   else
                 {
                 ?>
-                <li><a href="index.php?p=register">Register</a></li>
-                <li><a href="index.php?p=login">Login</a></li> 
+                <li><a href="index.php?p=register" class="text-warning">Register</a></li>
+                <li><a href="index.php?p=login" class="text-warning">Login</a></li> 
                 <?php 
                 } 
                 ?>
