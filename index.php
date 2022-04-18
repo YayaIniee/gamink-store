@@ -24,12 +24,12 @@
 <body>
 
 <div class="container-fluid bg-dark">
-   <div id="top-bar" class="bg-dark">
+   <div id="top-bar" class="bg-light">
      <div class="row">
        <div class="span4">
-         <a href="index.php" class="logo pull-left"><img src="img/BrandGS.png" class="site_logo" alt="" width="150px" ></a>
+         <a href="index.php" class="logo pull-left"><img src="img/BrandGS-b.png" class="site_logo" alt="" width="150px" ></a>
          <div class="span8">
-           <div id="menu_user" class="account pull-rigth">
+           <div id="menu_user" class="account pull-right">
              <ul class="user-menu">
                <li class="nav-item"><a href="index.php" class="nav-link text-warning">Home</a></li>
                <li class="nav-item"><a href="index.php?p=about" class="nav-link text-warning">About Us</a></li>
