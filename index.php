@@ -26,7 +26,7 @@
    <div id="top-bar" class="container bg-dark">
      <div class="row">
        <div class="span4">
-         <a href="index.php" class="logo pull-left"><img src="" class="site_logo" alt=""></a>
+         <a href="index.php" class="logo pull-left"><img src="img/BrandGS.png" class="site_logo" alt="" width="150px" ></a>
          <div class="span8">
            <div id="menu_user" class="account pull-rigth">
              <ul class="user-menu">
