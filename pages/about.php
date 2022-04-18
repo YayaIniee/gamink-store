@@ -1,2 +1,2 @@
-<?php echo"belajar";
+<?php 
 ?>
