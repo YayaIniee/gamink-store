@@ -28,6 +28,38 @@
             </form>
         </div>
     </div>
-
-    //button di klick
 </div>
+
+<?php // jika submit button diklik
+  if(isset($_POST['btnLogin'])){
+	require_once('./class/class.Account.php'); 		
+	$objAccount = new Account(); 
+	
+    $objAccount->email = $_POST['email'];
+	$objAccount->password = $_POST['password'];
+
+	$cekEmail = $objAccount->ValidateEmail($_POST['email']);
+    if($cekEmail){
+		if($objAccount->email == $_POST['email'] && $objAccount->password == $_POST['password']){
+			if (!isset($_SESSION)) {
+				session_start();
+			}		  
+		
+			$_SESSION["idaccount"]= $objAccount->id;
+			$_SESSION["idpembeli"]= $objAccount->idpembeli;
+			$_SESSION["role"]= $objAccount->role;
+			$_SESSION["nama"]= $objAccount->nama;
+			
+			echo "<script> alert('Login sukses'); </script>";		
+			echo '<META HTTP-EQUIV="Refresh" Content="0; URL=index.php">';
+		}
+		else{
+			echo "<script> alert('Email dan password tidak match'); </script>";		
+		}		
+	}
+	else{
+		echo "<script> alert('Email tidak terdaftar'); </script>";		  
+	}
+	
+  }
+?>
