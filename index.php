@@ -12,8 +12,65 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header> <?php include 'header.php' ?> </header>
-    <div class="container-fluid">
+ <div class="container-fluid">
+   <div id="top-bar" class="container">
+     <div class="row">
+       <div class="span4">
+         <a href="index.php" class="logo pull-left"><img src="" class="site_logo" alt=""></a>
+         <div class="span8">
+           <div id="menu_user" class="account pull-rigth">
+             <ul class="user-menu">
+               <li><a href="index.php">Home</a></li>
+               <li><a href="index.php?p=about">About Us</a></li>
+               <li><a href="index.php?p=contact"></a></li>
+
+              <?php
+                if(isset($_SESSION["role"]))
+                {
+                  if($_SESSION["role"] == "admin")
+                  {
+              ?>
+               <li><a href="index.php?p=accountlist">User</a></li>
+               <li><a href="index.php?p=rolelist">Role</a></li>
+               <li><a href="index.php?p=pembelilist"></a></li>
+               <li><a href="index.php?p=categorylist">Category</a></li>
+               <li><a href="index.php?p=menulist"></a>Menu</li>
+               <li><a href="index.php?p=bannerlist">Banner</a></li>
+               <li><a href="index.php?p=pesananlist">Pesanan</a></li>
+               <?php
+                  } 
+                    else //member
+                  {
+                ?>
+                <li><a href="index.php?p=historypesanan"></a>History Pesanan</li>
+                <li><a href="index.php?p=cart"></a>Keranjang</li>
+                <?php
+                  }
+                ?>
+                <li><a href="index.php?p=logout">Logout</a></li>
+                <?php
+                }
+                  else
+                {
+                ?>
+                <li><a href="index.php?p=register">Register</a></li>
+                <li><a href="index.php?p=login">Login</a></li> 
+                <?php 
+                } 
+                ?>
+
+             </ul>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+
+
+
+    <div id="top-bar" class="container-fluid">
         <div class="container">
             <div class="row mt-2">
             <div id="demo" class="carousel slide" data-bs-ride="carousel">
