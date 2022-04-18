@@ -60,7 +60,7 @@
                 <li><a href="index.php?p=logout" class="text-warning">Logout</a></li>
                 <?php
                 }
-                  else
+                  else //guest
                 {
                 ?>
                 <li><a href="index.php?p=register" class="text-warning">Register</a></li>
