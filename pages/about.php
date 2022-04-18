@@ -1,1 +1,4 @@
-<?php echo"hello wordl";   ?>
+<?php 
+    echo"hello wordl";
+    echo"sayang banget gak makan";
+?>
