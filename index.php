@@ -40,7 +40,7 @@
               ?>
                <li><a href="index.php?p=accountlist">User</a></li>
                <li><a href="index.php?p=rolelist">Role</a></li>
-               <li><a href="index.php?p=pembelilist"></a></li>
+               <li><a href="index.php?p=pembelilist">Pembeli</a></li>
                <li><a href="index.php?p=categorylist">Category</a></li>
                <li><a href="index.php?p=menulist"></a>Menu</li>
                <li><a href="index.php?p=bannerlist">Banner</a></li>
